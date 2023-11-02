@@ -21,10 +21,8 @@ default_context:
   traefik_constraint_tag_staging: 'stag.utterance_organizer.com'
   traefik_public_constraint_tag: 'traefik-public'
   flower_auth: 'admin:65df0418448627f388890d305913ef00e689f9ddccdba5a2515d5eee1daaf7ce'
-  sentry_dsn: ''
   docker_image_prefix: ''
   docker_image_backend: 'backend'
-  docker_image_celeryworker: 'celeryworker'
   docker_image_frontend: 'frontend'
   _copy_without_render: [frontend/src/**/*.html, frontend/src/**/*.vue, frontend/node_modules/*, backend/app/app/email-templates/**]
   _template: ./
