@@ -5,7 +5,6 @@ from pydantic.networks import EmailStr
 
 from app import models, schemas
 from app.api import deps
-from app.utils import send_test_email
 
 router = APIRouter()
 
@@ -18,5 +17,4 @@ def test_email(
     """
     Test emails.
     """
-    send_test_email(email_to=email_to)
     return {"msg": "Test email sent"}
